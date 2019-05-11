@@ -1,0 +1,20 @@
+LIBRARY:MotorTest.h
+*The following library can be used to test 'n' mumber of motor using cytron motor driver*
+
+Functions in the library:
+motor_run()
+
+
+motor_run(byte Mspeed, bool Mdir, int time_delay, int num_out, ...);
+
+-The argunments of the inbuild functions are:
+1.motor speed
+2.direction of the motor rotation
+3.Time delay
+4.motor pins and their corresponding dir pins
+NOTE:During passing the motor pins and dir pins ,first pass the motor pins and then pass the corresponding dir pins
+
+For example:
+motorpin1=8,dir1=10,motorpin2=6,dir2=12
+
+motor_run(motor speed,direction of the motor rotation,time delay,4(total no of pins),8,6,10,12)
